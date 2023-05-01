@@ -16,7 +16,7 @@ export class ZeldaAvatarsServiceService {
 
 
     public listCharacters(limit: string = '10'): Observable<CharactersResponse> {
-      const url = `${this.endpoint}/characters?limit=2${limit}`;
+      const url = `${this.endpoint}/characters?limit=${limit}`;
 
       return this.http
         .get<CharactersResponse>(url)

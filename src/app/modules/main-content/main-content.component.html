@@ -1,11 +1,10 @@
-<main class="d-flex flex-col justify-content-center align-items-center min-vh-100">
-  <div class="card card-avatar">
+<main class="d-flex flex-col justify-content-center align-items-start min-vh-100 flex-wrap">
+  <div class="card card-avatar" *ngFor="let character of characters">
     <img src="https://avatars.githubusercontent.com/u/79556805?v=4" class="card-img-top">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-        content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <h5 class="card-title">{{character.name}}</h5>
+      <p class="card-text small">{{character.description}}</p>
+      <a href="#" class="btn btn-primary">Ver mais</a>
     </div>
   </div>
 </main>

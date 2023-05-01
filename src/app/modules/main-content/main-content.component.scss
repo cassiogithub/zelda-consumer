@@ -1,4 +1,11 @@
 .card-avatar {
   width: 16rem;
-  height: 32rem;
+
+ + .card-avatar {
+  margin: 16px;
+ }
+}
+
+.small {
+  font-size: 0.75rem;
 }
